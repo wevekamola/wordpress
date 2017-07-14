@@ -21,26 +21,4 @@ if ( ! function_exists( 'cc_styles' ) ) {
 
 //add filter to remove margin above html
 add_filter('show_admin_bar','__return_false');
-function wpb_custom_new_menu() {
-
-  register_nav_menus(
-
-    array(
-
-      'my-custom-menu' => __( 'My Custom Menu' ),
-
-      'extra-menu' => __( 'Extra Menu' )
-
-    )
-
-  );
-
-}
-
-add_action( 'init', 'wpb_custom_new_menu' );
-
-
-
-
-
 ?>
