@@ -8,30 +8,25 @@
     <title><?php echo bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+	
+		<nav class=" navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">				
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#" style="font-family: ;"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="180" height="45" alt="" />
+</a>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a role="button" class="btn btn-outline-secondary" href="guests_control_page.php" style="font-family: 'Oswald'; font-size: 17px;">
+						Admin Login<span class="sr-only">(current)</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-      <a class="navbar-brand" href="#">ColoredCow Event <img src=""> </a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav pull-right">
-        <li class="active"><a href="#">Admin <span class="sr-only">(current)</span></a></li>
-        
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
+	
 </head>
 
 <body>

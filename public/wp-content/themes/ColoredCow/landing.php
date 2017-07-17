@@ -5,8 +5,15 @@
  */
     get_header();
 ?>
+<!DOCTYPE html>
+<html>
+<head>
 
+</head>
+<body>
 
+</body>
+</html>
 
 
 <?php 
