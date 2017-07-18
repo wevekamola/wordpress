@@ -1,13 +1,7 @@
 	<?php wp_footer(); ?>
-
 <div class="footer fixed-bottom">
-       
-        Copyright &copy; ColoredCow 2017
-    
-    </div>
-
-
+     <p>Copyright &copy; ColoredCow 2017</p>
+</div>
 
 </body>
-
 </html>
