@@ -8,13 +8,13 @@
 	<div class="container">
 		<div class="row">
 		    <div class="col-lg-6 col-sm-12">
-			 	<div class="heading">Soiree</div>
+			 	<p class="heading">Soiree</p>
 				<p class="about-content">ColoredCow celebrates every first Saturday of the month with family and friends. This custom has been started 	to take a little time off from work and enjoy some moments in life. we believe in sharing moments and learning with each other. Come 	and join us over music, food, drinks and some moments full of laughter and joy.
 		  	 	</p>
 		  	 	<hr>
 		  		<div class="col-md-12 col-xs-12">
-			  	    <div class="heading-request">Wanna join the party?
-			  	    </div>
+			  	    <p class="sub-heading">Wanna join the party?
+			  	    </p>
 		  	  		<div class="col-md-6 col-xs-12 middle">
 		  	    		<button type="button" class="btn btn-outline-warning btn-block custom-font" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo">Request Invite
 		  	    		</button>		
@@ -22,7 +22,7 @@
 		    	</div>
 			    </div>
           	<div class="col-lg-6 col-sm-12">
-			 	<div class="heading-comingevent">Coming Up</div>
+			 	<p class="heading-comingevent">Coming Up</p>
         	</div>
 		</div>
 		<div class="container">
@@ -82,14 +82,14 @@
         </div>
 	</div>
 	<hr>
-	<div class="event"><i class="fa fa-camera-retro fa-1x"></i>&nbsp;Event&nbsp;Gallery</div>				
+	<p class="event"><i class="fa fa-camera-retro fa-1x"></i>&nbsp;Event&nbsp;Gallery</p>				
 	<div class="container middle">
- 		<div class="col-lg-7 col-sm-8 middle">
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+ 		<div class="col-lg-8 col-sm-8 middle">
+			<div id="eventimagecarousel" class="carousel slide" data-ride="carousel">
   				<ol class="carousel-indicators">
-    				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    				<li data-target="#eventimagecarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#eventimagecarousel" data-slide-to="1"></li>
+				    <li data-target="#eventimagecarousel" data-slide-to="2"></li>
 				</ol>
   				<div class="carousel-inner" role="listbox">
 				    <div class="carousel-item active">
@@ -102,11 +102,11 @@
 				    	<img class="d-block img-fluid images_carousel" src="<?php echo get_template_directory_uri(); ?>/dist/images/3.jpg" alt="Third slide">
 				    </div>
   				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<a class="carousel-control-prev" href="#eventimagecarousel" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
 				</a>
-			  	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			  	<a class="carousel-control-next" href="#eventimagecarousel" role="button" data-slide="next">
 			    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			    	<span class="sr-only">Next</span>
 			  	</a>
