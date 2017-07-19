@@ -25,6 +25,9 @@ if ( ! function_exists( 'cc_styles' ) ) {
              wp_enqueue_style('cc-bootstrap_reboot_min', get_template_directory_uri().'/dist/lib/css/bootstrap-reboot.min.css');
              wp_enqueue_style('style', get_template_directory_uri().'/style.css');
              wp_enqueue_style('cc-custom-font','https://fonts.googleapis.com/css?family=Marcellus+SC|Kanit:200');
+
+             wp_enqueue_style('cc-custom-fonts','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+             
       
     }
     add_action('wp_enqueue_scripts','cc_styles');
