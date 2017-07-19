@@ -1,5 +1,4 @@
 *.log
-.htaccess
 composer.lock
 
 public/wp
