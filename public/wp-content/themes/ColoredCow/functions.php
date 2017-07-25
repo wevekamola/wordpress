@@ -9,6 +9,8 @@ if ( ! function_exists( 'cc_scripts' ) ) {
         wp_enqueue_script('main', get_template_directory_uri().'/main.js', array('jquery', 'cc-bootstrap'), '1.0.0', true);
         wp_enqueue_script('cc-google-jquery','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
         wp_localize_script( 'main', 'PARAMS', array('ajaxurl' => admin_url('admin-ajax.php')) );
+        wp_enqueue_script('main', get_template_directory_uri().'/main.js', array('jquery', 'cc-bootstrap'), '1.0.0', true);
+
 
     }
     add_action('wp_enqueue_scripts','cc_scripts');
@@ -35,5 +37,42 @@ if ( ! function_exists( 'cc_styles' ) ) {
 
 //add filter to remove margin above html
 add_filter('show_admin_bar','__return_false');
+
+
+function add_guest_request(){
+    if(isset($_POST['request_name'])){
+
+        $event_id=$_POST['event_id'];
+        $request_name=$_POST['request_name'];
+        $request_email=$_POST['request_emailid'];
+        $request_phone=$_POST['request_number'];
+        $request_gender=$_POST['request_gender'];
+        
+
+        $this_post = array(
+          'post_title'    => $request_name,
+          'post_status'   => 'publish',
+          'post_type'     => 'guests'
+         );
+        $post_id = wp_insert_post( $this_post );
+        if( !$post_id ){
+            wp_send_json_error();
+        }
+        add_post_meta($post_id, 'Name', $request_name);
+        add_post_meta($post_id, 'email_id', $request_email);
+        add_post_meta($post_id, 'mobile_number', $request_phone);
+        add_post_meta($post_id, 'gender', $request_gender);
+        add_post_meta($post_id, 'status', 'Requested');
+        add_post_meta($post_id, 'event_id', $event_id);
+        
+    }
+}
+add_action('wp_ajax_add_guest_request','add_guest_request');
+add_action('wp_ajax_nopriv_add_guest_request','add_guest_request');
+
+
+
+
+
 ?>
 

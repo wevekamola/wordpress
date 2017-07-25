@@ -49,8 +49,8 @@ body{
 
 .heading-comingevent{
     @extend .font-marcellus;
-    padding-top: 20px;
-    font-size: 35px; 
+    padding-top: 30px;
+    font-size: 40px; 
     color: $golden;
     text-align: center;
 }
@@ -123,5 +123,23 @@ body{
 	text-align: center;
 }
 
+
+.about-event{
+	padding-top: 15px;
+    @extend .font-opensans;
+    font-size: 39px;
+	color: $golden;
+	text-align: center;
+}
+
+table, th, td {
+	    border: 1px solid black;
+	    border-collapse: collapse;
+	}
+
+th, td {
+	    padding: 5px;
+	    text-align: left;
+	}
 
 @import 'media';
