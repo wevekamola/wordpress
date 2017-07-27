@@ -50,6 +50,7 @@
 			            Venue: <?php echo $venue; ?><br>
 			            ID:<?php echo $id; ?><br>   
 		            </p>
+		            
 <?php
       	endwhile;
     	wp_reset_postdata();

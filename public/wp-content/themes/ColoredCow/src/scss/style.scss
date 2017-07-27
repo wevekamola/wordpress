@@ -34,7 +34,7 @@ Text Domain: coloredcow
 	}
 }
 
-body{
+.body{
     padding-top: 100px;
 	background-color: $pink;
 	background-image: url('dist/images/background.png');
@@ -103,6 +103,7 @@ body{
 .custom-font{
 	@extend .font-opensans;
 	font-weight:bold;
+	padding-bottom:10px;
 }
 
 .images_carousel{
@@ -132,14 +133,14 @@ body{
 	text-align: center;
 }
 
-table, th, td {
-	    border: 1px solid black;
-	    border-collapse: collapse;
-	}
 
-th, td {
-	    padding: 5px;
-	    text-align: left;
-	}
+.about-event-page{
+	padding-top: 50px;
+    @extend .font-opensans;
+    font-size: 30px;
+	color: $golden;
+	text-align: center;
+}
+
 
 @import 'media';
