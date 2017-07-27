@@ -15,14 +15,7 @@
     $events_loop = new WP_Query( $args );
     if ( $events_loop->have_posts() ) :
         while ( $events_loop->have_posts() ) : $events_loop->the_post();
-            $title = get_the_title();
-            $description = get_the_content();
-            $theme_name = get_field('theme_name');
-            $date = get_field('date');
-            $venue = get_field('venue');
-            $id = get_the_ID();
 ?>
-
 <body class="body">
 	<div class="container">
 		<div class="row">
@@ -36,7 +29,7 @@
 			  	    </p>
 		  	  		<div class="col-md-6 col-xs-12 middle">
 
-                <button type="button" class="btn btn-outline-warning btn-block custom-font button-request" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" data-id="<?php echo $id ?>">Request Invite
+                <button type="button" class="btn btn-outline-warning btn-block custom-font button-request" data-toggle="modal" data-target="#requestModal" data-whatever="@mdo" data-id="<?php echo $id = get_the_ID(); ?>">Request Invite
 		  	    		</button>		
 			  		</div>	
 		    	</div>
@@ -44,10 +37,10 @@
           	<div class="col-lg-6 col-sm-12">
 			 	<p class="heading-comingevent">Coming Up</p>
 					<p class="about-event">
-			            Occasion: <?php echo $title; ?><br>
-			            Theme: <?php echo $theme_name;?><br> 
-			            Date: <?php echo $date; ?> <br>
-			            Venue: <?php echo $venue; ?><br>
+			            Occasion: <?php echo $title = get_the_title(); ?><br>
+			            Theme: <?php echo $theme_name = get_field('theme_name');?><br> 
+			            Date: <?php echo $date = get_field('date'); ?> <br>
+			            Venue: <?php echo $venue = get_field('venue'); ?><br>
 			            ID:<?php echo $id; ?><br>   
 		            </p>
 		            
@@ -56,7 +49,6 @@
     	wp_reset_postdata();
   	endif;
 ?>
-
         	</div>
 		</div>
 	</div>		

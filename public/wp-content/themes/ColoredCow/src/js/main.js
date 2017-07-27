@@ -22,7 +22,7 @@ $(document).on("click",'.accept',function(){
     var event_id=$(this).attr('value');
     update(guest_id,event_id);
 });
-
+ 
 function update(guest_id,event_id){
     var guest_id= guest_id;
     var event_id= event_id;
@@ -32,7 +32,6 @@ function update(guest_id,event_id){
         url:PARAMS.ajaxurl,
         data:retrive_guest,
         success:function(result){
-            // $("#request_guest").html(result);
             fetch_guest(event_id);
             fetch_approve_guest();       
         }
