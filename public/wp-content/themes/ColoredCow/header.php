@@ -15,9 +15,16 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a role="button" class="btn btn-outline-secondary" href="http://localhost/wordpress/public/events/">
-						Admin Login
+					<a role="button" class="btn btn-outline-secondary" href="http://localhost/wordpress/public/">
+						Home
 					</a>
+					<a role="button" class="btn btn-outline-secondary" href="http://localhost/wordpress/public/events/">
+						All Events
+					</a>
+                    <a role="button" class="btn btn-outline-secondary" href="http://localhost/wordpress/public/wp/wp-admin/">
+						Admin
+					</a>
+					
 				</li>
 			</ul>
 		</div>

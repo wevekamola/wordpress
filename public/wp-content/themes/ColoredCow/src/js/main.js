@@ -13,6 +13,11 @@ $("#submit_request").on("click",function(){
     }
 });
 
+
+
+
+
+
 $(".button-request").on("click",function(){
     event_id=$(this).data('id');
 });
@@ -23,10 +28,40 @@ $(document).on("click",'.accept',function(){
     update(guest_id,event_id);
 });
  
+
+$(document).on("click",'.send',function(){    
+    var guest_id=$(this).attr('id');
+    var event_id=$(this).attr('value');
+   send(guest_id,event_id); 
+});
+
+
+function send(guest_id,event_id){
+    var guest_id= guest_id;
+    var event_id= event_id;
+    
+    var send_id ="action=send_message&guest_id="+guest_id+"&event_id="+event_id;
+    
+ $('#progress').show();
+
+    $.ajax({
+        type:'POST',
+        url:PARAMS.ajaxurl,
+        data:send_id,
+        success:function(result){
+$('#progress').hide();        
+        alert('email has been send!')
+        }
+    });
+}
+
+
+
 function update(guest_id,event_id){
     var guest_id= guest_id;
     var event_id= event_id;
     var retrive_guest ="action=update_guest&guest_id="+guest_id;
+
     $.ajax({
         type:'POST',
         url:PARAMS.ajaxurl,
@@ -68,6 +103,30 @@ function fetch_guest(id){
         }
     });
 }
+
+
+$("#select-event-guest").on("click",function(){
+    var e = document.getElementById("select-event-guest");
+    var User = e.options[e.selectedIndex].value;
+      console.log(event_id);
+    fetch_guest_list(User);
+});
+
+
+
+function fetch_guest_list(id){
+    var event_id= id;
+    var fetch_request ="action=show_guest_list&event_id="+event_id;
+    $.ajax({
+        type:'POST',
+        url:PARAMS.ajaxurl,
+        data:fetch_request,
+        success:function(result){
+            $("#guest_list").html(result);        
+        }
+    });
+}
+
 
 function fetch_approve_guest(){
     var fetch_approve ="action=show_approved_guest";
