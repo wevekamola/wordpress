@@ -18,10 +18,10 @@
 					<a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public">
 						Home
 					</a>
-					<a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public/events/">
+					<a role="button" class="btn btn-outline-secondary" href="events/">
 						All Events
 					</a>
-                    <a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public/wp/wp-admin/">
+                    <a role="button" class="btn btn-outline-secondary" href="<?php echo wp_login_url(); ?>">
 						Admin
 					</a>
 					
