@@ -5,9 +5,7 @@
  */
 ?>
 <!DOCTYPE html>
-
 <html>
-
   <head>
     <title>testrsvp</title>
             <!-- Required meta tags -->
@@ -18,7 +16,7 @@
             <!-- Bootstrap CSS -->
             <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="style.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
          <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -34,16 +32,15 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a role="button" class="btn btn-outline-secondary" href="http://localhost/wordpress/public/">
+					<a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public">
 						Home
 					</a>
-					<a role="button" class="btn btn-outline-secondary" href="http://localhost/wordpress/public/events/">
+					<a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public/events/">
 						All Events
 					</a>
-                    <a role="button" class="btn btn-outline-secondary" href="http://localhost/wordpress/public/wp/wp-admin/">
+                    <a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public/wp/wp-admin/">
 						Admin
 					</a>
-					
 				</li>
 			</ul>
 		</div>
@@ -73,12 +70,6 @@ function my_decrypt($data, $key) {
     return openssl_decrypt($encrypted_data, 'AES-128-ECB', $encryption_key, 0, $iv);
 }
  
-
-  
-
-
-
-
    $id_en = $_GET['id'];
    $token_en = $_GET['token'];
    $code_en = $_GET['code'];
@@ -88,17 +79,12 @@ function my_decrypt($data, $key) {
    $code_de = my_decrypt($code_en, $key);
     
     ?>	
-
-
-    
-
-
-<div class="container"
-<div class="row" style="height:450px;width: 450px;background-color: pink;color: black;border-radius: 15px;font-size: 30px; background-image: url(https://image.freepik.com/free-vector/soft-background-with-a-cute-blue-watercolor-stain_1048-5169.jpg); background-size: 450px 450px;padding: 80px;font-family: 'La Belle Aurore', cursive;margin-top:110px;">
+ <div class="container"
+   <div class="row" style="height:450px;width: 450px;background-color: pink;color: black;border-radius: 15px;font-size: 30px; background-image: url(https://image.freepik.com/free-vector/soft-background-with-a-cute-blue-watercolor-stain_1048-5169.jpg); background-size: 450px 450px;padding: 80px;font-family: 'La Belle Aurore', cursive;margin-top:110px;">
 			Thank You! <?php echo $id_de; ?>, For accepting the invite.<br><br>
 			Looking forward to see you at the event.
-</div>
-</div>
+   </div>
+ </div>
 
 <br>
     	<div class="footer">
