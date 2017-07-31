@@ -26,14 +26,8 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				
-					<a role="button" class="btn btn-outline-secondary" href="<?php echo get_permalink( get_page_by_title( 'Home page' ) );?>">
+					<a role="button" class="btn btn-outline-secondary" href="pagelink.php">
 						Home
-					</a>
-					<a role="button" class="btn btn-outline-secondary" href="<?php echo get_permalink( get_page_by_title( 'Events' ) );?>">
-						All Events
-					</a>
-                    <a role="button" class="btn btn-outline-secondary" href="<?php echo wp_login_url(); ?>">
-						Admin
 					</a>
 			</ul>
 		</div>
