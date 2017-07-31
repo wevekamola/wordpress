@@ -74,18 +74,29 @@ function my_decrypt($data, $key) {
 }
  
 
+  
 
 
 
 
- $id_en = $_GET['id'];
+   $id_en = $_GET['id'];
+   $token_en = $_GET['token'];
+   $code_en = $_GET['code'];
 
    $id_de = my_decrypt($id_en, $key);
-    ?>		
+   $token_de = my_decrypt($token_en, $key);
+   $code_de = my_decrypt($code_en, $key);
+    
+    ?>	
+
+
+    
+
+
 <div class="container"
 <div class="row" style="height:450px;width: 450px;background-color: pink;color: black;border-radius: 15px;font-size: 30px; background-image: url(https://image.freepik.com/free-vector/soft-background-with-a-cute-blue-watercolor-stain_1048-5169.jpg); background-size: 450px 450px;padding: 80px;font-family: 'La Belle Aurore', cursive;margin-top:110px;">
 			Thank You! <?php echo $id_de; ?>, For accepting the invite.<br><br>
-			Looking forward to see you at the event
+			Looking forward to see you at the event.
 </div>
 </div>
 

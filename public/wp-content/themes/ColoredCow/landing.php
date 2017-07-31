@@ -41,7 +41,7 @@
 			            Theme: <?php echo $theme_name = get_field('theme_name');?><br> 
 			            Date: <?php echo $date = get_field('date'); ?> <br>
 			            Venue: <?php echo $venue = get_field('venue'); ?><br>
-			            ID:<?php echo $id; ?><br>   
+			              
 		            </p>
 		            
 <?php

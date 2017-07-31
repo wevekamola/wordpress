@@ -2,7 +2,6 @@
 composer.lock
 .htaccess
 
->>>>>>> 597c3d188227824bfdb0305e7c2837853353e650
 public/wp
 vendor
 public/wp-content/plugins
