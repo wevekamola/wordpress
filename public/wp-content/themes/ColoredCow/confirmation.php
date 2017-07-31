@@ -32,13 +32,13 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public">
+					<a role="button" class="btn btn-outline-secondary" href="www.ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public">
 						Home
 					</a>
-					<a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public/events/">
+					<a role="button" class="btn btn-outline-secondary" href="www.ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public/events/">
 						All Events
 					</a>
-                    <a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public/wp/wp-admin/">
+                    <a role="button" class="btn btn-outline-secondary" href="www.ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public/wp/wp-admin/">
 						Admin
 					</a>
 				</li>

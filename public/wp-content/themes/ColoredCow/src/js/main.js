@@ -15,9 +15,6 @@ $("#submit_request").on("click",function(){
 
 
 
-
-
-
 $(".button-request").on("click",function(){
     event_id=$(this).data('id');
 });
