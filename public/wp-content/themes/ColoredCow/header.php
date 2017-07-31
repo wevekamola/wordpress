@@ -15,10 +15,10 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a role="button" class="btn btn-outline-secondary" href="ec2-13-59-131-255.us-east-2.compute.amazonaws.com/phase2/public">
+					<a role="button" class="btn btn-outline-secondary" href="<?php echo get_permalink( get_page_by_title( 'Home page' ) );?>">
 						Home
 					</a>
-					<a role="button" class="btn btn-outline-secondary" href="events/">
+					<a role="button" class="btn btn-outline-secondary" href="<?php echo get_permalink( get_page_by_title( 'Events' ) );?>">
 						All Events
 					</a>
                     <a role="button" class="btn btn-outline-secondary" href="<?php echo wp_login_url(); ?>">
