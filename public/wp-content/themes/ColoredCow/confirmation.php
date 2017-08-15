@@ -57,6 +57,8 @@ function my_decrypt($data, $key) {
     return openssl_decrypt($encrypted_data, 'AES-128-ECB', $encryption_key, 0, $iv);
 }
  
+ if(isset($_GET["id"]))
+{			
    $id_en = $_GET['id'];
    $token_en = $_GET['token'];
    $code_en = $_GET['code'];
@@ -72,7 +74,15 @@ function my_decrypt($data, $key) {
 			Looking forward to see you at the event.
    </div>
  </div>
-
+}
+<?php $output .='<center><h4 class="card-title text-danger">WARNING!</h4>
+                            <p class="card-text text-warning">ONLY SPECIFIC USERS ARE AUTHORIZED TO THIS PAGE. THANK YOU<p>
+                            <div class="card-block">
+                                   <a class="btn btn-success" href="index.php">Get Back</a>
+                            </div>
+                        </center>';            
+        }
+			echo $output;
 
 <br>
     	<div class="footer">

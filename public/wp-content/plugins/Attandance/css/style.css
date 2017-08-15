@@ -1,0 +1,70 @@
+/*Description: Style CSS for Plugin Attendance
+Author: Vivek Amola
+Author URI: vivek.amola@coloredcow.in
+version: 0.1 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+#select-event{ 
+	display: block; 
+	padding: 10px 40px 10px 10px  !important; 
+	max-width: 80%; 
+	height: auto !important; 
+	border: 1px solid #e3e3e3; 
+	border-radius: 6px; 
+	background: url("https://image.ibb.co/iMeAJv/selectbox_arrow.png") 
+	right center no-repeat; 
+	background-color: #fff; 
+	color: #444444; 
+	font-size: 14px; 
+	line-height: 16px !important; 
+	appearance: none; /* this is must */ 
+	-webkit-appearance: none;
+	-moz-appearance: none; } 
+	/* body select.select_box option */ 
+	body select option { padding: 0 3px; }
+
+#plugin-body{
+   background-color:#fAfAfA;
+   font-size: 14px;
+   font-weight:  450;	
+   padding-right:15px;
+}
+
+.Confirmed{
+	font-weight: bold;
+	color:green;
+}
+
+
+.Pending{
+	font-weight: bold;
+	color:orange;
+}
+
+
+.Requested{
+	font-weight: bold;
+	color:#C0392B;
+	padding-left:7px; 
+
+}
+
+.heading-box{
+	border-radius: 6px;
+	height: 40px;
+	width: 100%;
+	background-color:#008080; 
+	text-align:center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: white; 
+	padding-top:5px;
+	font-size:20px; 
+	
+}
+
+.nw{
+	background-color:#2471A3;	
+}
+

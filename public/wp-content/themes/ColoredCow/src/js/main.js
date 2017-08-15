@@ -57,7 +57,7 @@ $('#progress').hide();
 function update(guest_id,event_id){
     var guest_id= guest_id;
     var event_id= event_id;
-    var retrive_guest ="action=update_guest&guest_id="+guest_id;
+    var retrive_guest ="action=update_guest&guest_id="+guest_id+"&event_id="+event_id;
 
     $.ajax({
         type:'POST',
